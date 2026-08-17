@@ -6,18 +6,30 @@
   <title>Um encontro pra nós duas ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- PÁGINA INICIAL -->
+  <!-- =========================
+       PÁGINA INICIAL
+  ========================== -->
+
   <section id="home" class="screen active">
+
     <div class="floating-hearts"></div>
 
     <div class="card intro-card">
+
       <div class="image-placeholder">
-        <img src="1.jpeg" alt="Foto do início" onerror="this.style.display='none'; this.parentElement.classList.add('empty')">
+        <img
+          src="1.jpeg"
+          alt="Foto do início"
+          onerror="this.style.display='none'; this.parentElement.classList.add('empty')"
+        >
       </div>
 
-      <p class="hello">oi minha franjoca ❤️</p>
+      <p class="hello">
+        oi minha franjoca ❤️
+      </p>
 
       <p>
         sei q ta num dia chatinho hoje e tudo q eu queria
@@ -28,72 +40,183 @@
         por isso fiz o unico jeito da gente se encontrar:
       </p>
 
-      <p class="highlight">um jogo pra voce unir a gente 🥹</p>
+      <p class="highlight">
+        um jogo pra voce unir a gente 🥹
+      </p>
 
-      <button id="startBtn" class="pink-button">💗 começar nosso encontro</button>
+      <button id="startBtn" class="pink-button">
+        💗 começar nosso encontro
+      </button>
+
     </div>
+
   </section>
 
-  <!-- LABIRINTO -->
+
+  <!-- =========================
+       LABIRINTO
+  ========================== -->
+
   <section id="game" class="screen">
+
     <div class="game-container">
+
       <div class="game-title">
+
         <span>💗</span>
+
         <div>
           <h2>encontre seu amor</h2>
-          <p>chegue até mim para a gente se encontrar</p>
+          <p>
+            chegue até mim para a gente se encontrar
+          </p>
         </div>
+
         <span>💗</span>
+
       </div>
 
-      <div id="maze" class="maze" aria-label="Labirinto"></div>
+
+      <div id="maze" class="maze"></div>
+
+
+      <!-- CONTROLES PARA CELULAR -->
 
       <div class="mobile-controls">
-        <button data-move="up">▲</button>
+
+        <button data-move="up">
+          ▲
+        </button>
+
         <div>
-          <button data-move="left">◀</button>
-          <button data-move="down">▼</button>
-          <button data-move="right">▶</button>
+
+          <button data-move="left">
+            ◀
+          </button>
+
+          <button data-move="down">
+            ▼
+          </button>
+
+          <button data-move="right">
+            ▶
+          </button>
+
         </div>
+
       </div>
 
-      <p class="controls-help">use as setas ou WASD para andar 💕</p>
+
+      <p class="controls-help">
+        use as setas ou WASD para andar 💕
+      </p>
+
     </div>
+
   </section>
 
-  <!-- FINAL -->
+
+  <!-- =========================
+       TELA FINAL
+  ========================== -->
+
   <section id="finish" class="screen">
+
     <div class="hearts-final"></div>
 
     <div class="card finish-card">
+
+
+      <!-- ENCONTRO DOS DOIS PERSONAGENS -->
+
       <div class="meet-animation">
-        <div class="mini-character her">👩🏻</div>
-        <div class="heart-between">❤️</div>
+
+        <!-- personagem dela -->
+
+        <div class="mini-character her">
+          👩🏻
+        </div>
+
+
+        <div class="heart-between">
+          ❤️
+        </div>
+
+
+        <!-- SUA FOTO -->
+
         <div class="mini-character me">
-          <img src="2.jpeg" alt="Eu">
-      </div>      
+
+          <img
+            src="2.jpeg"
+            alt="Eu"
+            onerror="this.style.display='none'"
+          >
+
+        </div>
+
       </div>
+
+
+      <!-- FOTO DE VOCÊS -->
 
       <div class="photo-placeholder">
-        <img src="3.jpeg" alt="Foto de vocês" onerror="this.style.display='none'; this.parentElement.classList.add('empty')">
+
+        <img
+          src="3.jpeg"
+          alt="Foto de vocês"
+          onerror="this.style.display='none'; this.parentElement.classList.add('empty')"
+        >
+
       </div>
 
-      <h1>eu tiii amo tanto, minha vida ❤️</h1>
+
+      <h1>
+        eu tiii amo tanto, minha vida ❤️
+      </h1>
+
 
       <p class="final-message">
+
         agr estamos juntinhas pelo menos no jogo 🥹
+
         <br><br>
+
         mas eu queria muito poder atravessar qualquer
         labirinto só pra chegar pertinho de você.
+
       </p>
 
-      <button id="musicBtn" class="music-button">🎵 tocar nossa música</button>
-      <button id="restartBtn" class="text-button">jogar de novo 💗</button>
+
+      <!-- BOTÃO DE MÚSICA -->
+
+      <button id="musicBtn" class="music-button">
+        🎵 tocar nossa música
+      </button>
+
+
+      <button id="restartBtn" class="text-button">
+        jogar de novo 💗
+      </button>
+
     </div>
+
   </section>
 
-  <audio id="music" src="Foi assim - Sotam (youtube) (mp3cut.net).mp3" loop></audio>
+
+  <!-- =========================
+       MÚSICA
+  ========================== -->
+
+  <audio
+    id="music"
+    src="Foi assim - Sotam (youtube) (mp3cut.net).mp3"
+    loop
+    preload="auto">
+  </audio>
+
 
   <script src="script.js"></script>
+
 </body>
 </html>
