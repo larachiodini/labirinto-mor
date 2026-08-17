@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Um encontro pra nós duas ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PÁGINA INICIAL -->
+  <section id="home" class="screen active">
+    <div class="floating-hearts"></div>
+
+    <div class="card intro-card">
+      <div class="image-placeholder">
+        <img src="assets/foto-inicio.jpg" alt="Foto do início" onerror="this.style.display='none'; this.parentElement.classList.add('empty')">
+        <span>coloque aqui a imagem do meme 💗</span>
+      </div>
+
+      <p class="hello">oi minha franjoca ❤️</p>
+
+      <p>
+        sei q ta num dia chatinho hoje e tudo q eu queria
+        era te ver...
+      </p>
+
+      <p>
+        por isso fiz o unico jeito da gente se encontrar:
+      </p>
+
+      <p class="highlight">um jogo pra voce unir a gente 🥹</p>
+
+      <button id="startBtn" class="pink-button">💗 começar nosso encontro</button>
+    </div>
+  </section>
+
+  <!-- LABIRINTO -->
+  <section id="game" class="screen">
+    <div class="game-container">
+      <div class="game-title">
+        <span>💗</span>
+        <div>
+          <h2>encontre seu amor</h2>
+          <p>chegue até mim para a gente se encontrar</p>
+        </div>
+        <span>💗</span>
+      </div>
+
+      <div id="maze" class="maze" aria-label="Labirinto"></div>
+
+      <div class="mobile-controls">
+        <button data-move="up">▲</button>
+        <div>
+          <button data-move="left">◀</button>
+          <button data-move="down">▼</button>
+          <button data-move="right">▶</button>
+        </div>
+      </div>
+
+      <p class="controls-help">use as setas ou WASD para andar 💕</p>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section id="finish" class="screen">
+    <div class="hearts-final"></div>
+
+    <div class="card finish-card">
+      <div class="meet-animation">
+        <div class="mini-character her">👩🏻</div>
+        <div class="heart-between">❤️</div>
+        <div class="mini-character me">🧑🏻</div>
+      </div>
+
+      <div class="photo-placeholder">
+        <img src="assets/foto-voces.jpg" alt="Foto de vocês" onerror="this.style.display='none'; this.parentElement.classList.add('empty')">
+        <span>coloque aqui uma foto de vocês 💕</span>
+      </div>
+
+      <h1>eu tiii amo tanto, minha vida ❤️</h1>
+
+      <p class="final-message">
+        agr estamos juntinhas pelo menos no jogo 🥹
+        <br><br>
+        mas eu queria muito poder atravessar qualquer
+        labirinto só pra chegar pertinho de você.
+      </p>
+
+      <button id="musicBtn" class="music-button">🎵 tocar nossa música</button>
+      <button id="restartBtn" class="text-button">jogar de novo 💗</button>
+    </div>
+  </section>
+
+  <audio id="music" src="assets/musica.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
